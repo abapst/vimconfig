@@ -1,4 +1,13 @@
-colorscheme darkblue
+execute pathogen#infect('plugins/{}')
+
+set laststatus=2
+
+" Solarized config
+syntax enable
+set background=dark
+colorscheme solarized
+
+set cursorline
 
 winpos 1 0
 set number
@@ -12,6 +21,25 @@ autocmd VimEnter * let w:created=1
 autocmd WinEnter * call AdjustWindow() 
 
 command Openheader call OpenHeader()
+
+" Syntastic options
+set statusline+=%#warningmsg#
+set statusline+=%{SyntasticStatuslineFlag()}
+set statusline+=%*
+let g:syntastic_always_populate_loc_list = 1
+let g:syntastic_auto_loc_list = 1
+let g:syntastic_check_on_open = 1
+let g:syntastic_check_on_wq = 0
+let g:syntastic_enable_highlighting = 1
+let g:syntastic_mode_map = { 'mode': 'active',
+                           \ 'active_filetypes': [],
+                           \ 'passive_filetypes': [] }
+
+" Python
+let g:syntastic_python_checkers=['pyflakes']
+
+" C
+let g:syntastic_c_include_dirs=['../include']
 
 " Global var containing lowercase-uppercase command pairs
 let g:command_line_substitutes = [
@@ -32,13 +60,13 @@ cnoremap <enter> <c-\>eCommandLineSubstitute()<enter><enter>
 function AdjustWindow()
   if !exists('w:created')
     if winwidth(0) < 84
-      set columns+=84
+      set columns+=85
       wincmd=
     endif
   endif
   if exists('w:created')
-    if winwidth(0) > 86
-      set columns-=84
+    if winwidth(0) > 84
+      set columns-=85
       wincmd=
     endif
   endif
