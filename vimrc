@@ -2,6 +2,11 @@ execute pathogen#infect('plugins/{}')
 
 set laststatus=2
 
+set guifont=Cousine\ 12
+
+" Command to turn on writing mode
+au BufNewFile,BufRead *.{md,mdown,mkd,mkdn,markdown,txt} call WritingMode()
+
 " Solarized config
 syntax enable
 set background=dark
@@ -13,7 +18,7 @@ winpos 1 0
 set number
 set tabstop=4
 set nohlsearch
-set lines=80 columns=84
+set lines=50 columns=84
 
 autocmd VimEnter * autocmd WinEnter * let w:created=1
 autocmd VimEnter * let w:created=1
@@ -22,7 +27,12 @@ autocmd WinEnter * call AdjustWindow()
 
 command Openheader call OpenHeader()
 
-" Syntastic options
+" Configure Lightline
+let g:lightline = {
+      \ 'colorscheme': 'solarized',
+      \ }
+
+" Configure Syntastic
 set statusline+=%#warningmsg#
 set statusline+=%{SyntasticStatuslineFlag()}
 set statusline+=%*
@@ -131,4 +141,18 @@ function CommandLineSubstitute()
     endfor
   endif
   return cl
+endfunction
+
+" Special writing mode for certain extensions
+function WritingMode()
+  set background=light
+  set lines=40 columns=100
+  set guioptions-=r
+  set laststatus=0
+  set noruler
+  set linebreak
+  set cursorline!
+  set number!
+  %le10
+  %re10
 endfunction
