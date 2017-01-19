@@ -3,6 +3,9 @@ execute pathogen#infect('plugins/{}')
 set laststatus=2
 
 set guifont=Cousine\ 12
+set guioptions -=m
+set guioptions -=T
+set guioptions-=r
 
 " Command to turn on writing mode
 au BufNewFile,BufRead *.{md,mdown,mkd,mkdn,markdown,txt} call WritingMode()
@@ -146,11 +149,13 @@ endfunction
 " Special writing mode for certain extensions
 function WritingMode()
   set background=light
+  set guifont=Cousine\ Bold\ 20
   set lines=40 columns=100
-  set guioptions-=r
   set laststatus=0
   set noruler
   set linebreak
   set cursorline!
   set number!
+
+  highlight NonText guifg=bg 
 endfunction
