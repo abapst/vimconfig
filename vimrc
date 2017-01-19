@@ -153,6 +153,4 @@ function WritingMode()
   set linebreak
   set cursorline!
   set number!
-  %le10
-  %re10
 endfunction
