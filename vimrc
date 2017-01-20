@@ -18,6 +18,7 @@ hi Normal guibg=#00162E
 set cursorline
 hi CursorLine guibg=#00346D
 hi LineNr guibg=#00162E
+hi clear NonText
 
 winpos 1 0
 set number
