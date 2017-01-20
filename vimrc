@@ -2,10 +2,11 @@ execute pathogen#infect('plugins/{}')
 
 set laststatus=2
 
-set guifont=Monospace\ 12
+set guifont=Monospace\ 10
 set guioptions -=m
 set guioptions -=T
-set guioptions-=r
+set guioptions -=r
+set guioptions -=L
 
 " Command to turn on writing mode
 au BufNewFile,BufRead *.{md,mdown,mkd,mkdn,markdown,txt} call WritingMode()
