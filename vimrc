@@ -2,7 +2,7 @@ execute pathogen#infect('plugins/{}')
 
 set laststatus=2
 
-set guifont=Cousine\ 12
+set guifont=Monospace\ 12
 set guioptions -=m
 set guioptions -=T
 set guioptions-=r
@@ -10,12 +10,14 @@ set guioptions-=r
 " Command to turn on writing mode
 au BufNewFile,BufRead *.{md,mdown,mkd,mkdn,markdown,txt} call WritingMode()
 
-" Solarized config
+" colorscheme config
 syntax enable
-set background=dark
-colorscheme solarized
+colorscheme monokai
+hi Normal guibg=#00162E
 
 set cursorline
+hi CursorLine guibg=#00346D
+hi LineNr guibg=#00162E
 
 winpos 1 0
 set number
@@ -32,7 +34,7 @@ command Openheader call OpenHeader()
 
 " Configure Lightline
 let g:lightline = {
-      \ 'colorscheme': 'solarized',
+      \ 'colorscheme': 'molokai',
       \ }
 
 " Configure Syntastic
@@ -149,8 +151,10 @@ endfunction
 " Special writing mode for certain extensions
 function WritingMode()
   set background=light
+  colorscheme solarized
   set guifont=Cousine\ Bold\ 20
   set lines=40 columns=100
+
   set laststatus=0
   set noruler
   set linebreak
