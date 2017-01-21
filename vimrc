@@ -2,7 +2,7 @@ execute pathogen#infect('plugins/{}')
 
 set laststatus=2
 
-set guifont=Monospace\ 10
+set guifont=Monospace\ 12
 set guioptions -=m
 set guioptions -=T
 set guioptions -=r
