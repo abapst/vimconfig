@@ -1,6 +1,3 @@
-[submodule "plugins/lightline.vim"]
-	path = plugins/lightline.vim
-	url = https://github.com/itchyny/lightline.vim.git
 [submodule "plugins/vim-colors-solarized"]
 	path = plugins/vim-colors-solarized
 	url = https://github.com/altercation/vim-colors-solarized
