@@ -11,5 +11,7 @@ Plugins:
 1. Install with the following command.
 
 <pre>
-git clone --recursive https://github.com/abapst/vimrc.git .vim && cd .vim && ./install.sh
+git clone --recursive https://github.com/abapst/vimrc.git .vim
+cd .vim
+./install.sh
 </pre>
