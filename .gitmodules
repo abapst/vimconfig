@@ -1,9 +1,12 @@
-[submodule "plugins/sources_non_forked/vim-colors-solarized"]
-	path = plugins/sources_non_forked/vim-colors-solarized
-	url = https://github.com/altercation/vim-colors-solarized.git
-[submodule "plugins/sources_non_forked/syntastic"]
-	path = plugins/sources_non_forked/syntastic
-	url = https://github.com/vim-syntastic/syntastic.git
-[submodule "plugins/sources_non_forked/vim-monokai"]
-	path = plugins/sources_non_forked/vim-monokai
-	url = https://github.com/sickill/vim-monokai.git
+[submodule "plugins/lightline.vim"]
+	path = plugins/lightline.vim
+	url = https://github.com/itchyny/lightline.vim.git
+[submodule "plugins/vim-colors-solarized"]
+	path = plugins/vim-colors-solarized
+	url = https://github.com/altercation/vim-colors-solarized
+[submodule "plugins/syntastic"]
+	path = plugins/syntastic
+	url = https://github.com/vim-syntastic/syntastic
+[submodule "plugins/vim-monokai"]
+	path = plugins/vim-monokai
+	url = https://github.com/sickill/vim-monokai

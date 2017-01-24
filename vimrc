@@ -1,4 +1,4 @@
-execute pathogen#infect('plugins/sources_forked/{}','plugins/sources_non_forked/{}')
+execute pathogen#infect('plugins/{}')
 
 set laststatus=2
 
