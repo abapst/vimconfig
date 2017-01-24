@@ -11,12 +11,13 @@ then
 else
   echo "alias vim=/usr/bin/gvim" >> $HOME/.bashrc
 fi
-exec bash
 
 # Redirect vimrc to .vim folder
 echo "runtime vimrc" > $HOME/.vimrc
 
 # Copy modified gtkrc script to home
 cp -a dotfiles/. $HOME
+
+exec bash
 
 echo "Done!"
