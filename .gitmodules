@@ -7,6 +7,3 @@
 [submodule "plugins/vim-monokai"]
 	path = plugins/vim-monokai
 	url = https://github.com/sickill/vim-monokai
-[submodule "plugins/lightline.vim"]
-	path = plugins/lightline.vim
-	url = https://github.com/itchyny/lightline.vim
