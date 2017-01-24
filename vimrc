@@ -21,6 +21,8 @@ hi CursorLine guibg=#00346D
 hi LineNr guibg=#00162E
 hi clear NonText
 
+hi Visual ctermfg=NONE ctermbg=59 cterm=NONE guifg=NONE guibg=#0075d0 gui=NONE
+
 winpos 1 0
 set number
 set tabstop=4
