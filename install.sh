@@ -11,6 +11,7 @@ then
 else
   echo "alias vim=/usr/bin/gvim" >> $HOME/.bashrc
 fi
+exec bash
 
 # Redirect vimrc to .vim folder
 echo "runtime vimrc" > $HOME/.vimrc
