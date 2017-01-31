@@ -2,11 +2,13 @@ execute pathogen#infect('plugins/{}')
 
 set laststatus=2
 
-set guifont=Monospace\ 12
-set guioptions -=m
-set guioptions -=T
-set guioptions -=r
-set guioptions -=L
+if has("gui_running")
+  set guifont=Monospace\ 12
+  set guioptions -=m
+  set guioptions -=T
+  set guioptions -=r
+  set guioptions -=L
+endif
 
 " Command to turn on writing mode
 au BufNewFile,BufRead *.{md,mdown,mkd,mkdn,markdown,txt} call WritingMode()
@@ -14,16 +16,16 @@ au BufNewFile,BufRead *.{md,mdown,mkd,mkdn,markdown,txt} call WritingMode()
 " colorscheme config
 syntax enable
 colorscheme monokai
-hi Normal guibg=#00162E
+hi Normal ctermbg=233 guibg=#00162E
 
 set cursorline
-hi CursorLine guibg=#00346D
-hi LineNr guibg=#00162E
+hi CursorLine ctermbg=25 guibg=#00346D
+hi LineNr ctermfg=NONE ctermbg=NONE cterm=NONE guifg=NONE guibg=#00162E gui=NONE
 hi clear NonText
 
 hi Visual ctermfg=NONE ctermbg=241 cterm=NONE guifg=NONE guibg=#434343 gui=NONE
 
-winpos 1 0
+"winpos 1 0
 set number
 set tabstop=4
 set nohlsearch
