@@ -21,7 +21,7 @@ hi CursorLine guibg=#00346D
 hi LineNr guibg=#00162E
 hi clear NonText
 
-hi Visual ctermfg=NONE ctermbg=59 cterm=NONE guifg=NONE guibg=#434343 gui=NONE
+hi Visual ctermfg=NONE ctermbg=241 cterm=NONE guifg=NONE guibg=#434343 gui=NONE
 
 winpos 1 0
 set number
