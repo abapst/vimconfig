@@ -3,7 +3,7 @@ execute pathogen#infect('plugins/{}')
 set laststatus=2
 
 if has("gui_running")
-  set guifont=Monospace\ 12
+  set guifont=Monospace\ 11
   set guioptions -=m
   set guioptions -=T
   set guioptions -=r
@@ -11,7 +11,7 @@ if has("gui_running")
 endif
 
 " Command to turn on writing mode
-au BufNewFile,BufRead *.{md,mdown,mkd,mkdn,markdown,txt} call WritingMode()
+"au BufNewFile,BufRead *.{md,mdown,mkd,mkdn,markdown,txt} call WritingMode()
 
 " colorscheme config
 syntax enable
