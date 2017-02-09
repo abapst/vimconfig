@@ -11,7 +11,7 @@ if has("gui_running")
 endif
 
 " Command to turn on writing mode
-au BufNewFile,BufRead *.{md,mdown,mkd,mkdn,markdown,txt} call WritingMode()
+" au BufNewFile,BufRead *.{md,mdown,mkd,mkdn,markdown,txt} call WritingMode()
 
 " colorscheme config
 syntax enable
@@ -19,7 +19,7 @@ colorscheme monokai
 hi Normal ctermbg=233 guibg=#00162E
 
 set cursorline
-hi CursorLine ctermbg=25 guibg=#00346D
+hi CursorLine ctermfg=NONE ctermbg=25 guibg=#00346D
 hi LineNr ctermfg=NONE ctermbg=NONE cterm=NONE guifg=NONE guibg=#00162E gui=NONE
 hi clear NonText
 
