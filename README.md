@@ -6,6 +6,8 @@ Plugins:
   - [Syntastic](https://github.com/vim-syntastic/syntastic)
   - [Monokai](https://github.com/sickill/vim-monokai)
 
+[!alt tag](https://lh5.googleusercontent.com/5L2dZcIjh_nsGZul3v1r58kkabs9RRTzuVaAw1GnIgFGLQrAzXNRbMNe6SMfzIDHzJyuyCzuyaLF5K8=w1195-h869-rw)
+
 ## Installation
 
 1. Install with the following command.
