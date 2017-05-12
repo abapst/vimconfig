@@ -1,4 +1,5 @@
 execute pathogen#infect('plugins/{}')
+set shell=/bin/bash
 
 set laststatus=2
 
