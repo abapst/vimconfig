@@ -2,9 +2,10 @@ execute pathogen#infect('plugins/{}')
 set shell=/bin/bash
 
 set laststatus=2
+set colorcolumn=81
 
 if has("gui_running")
-  set guifont=Monospace\ 11
+  set guifont=Monospace\ 13
   set guioptions -=m
   set guioptions -=T
   set guioptions -=r
@@ -53,9 +54,11 @@ let g:syntastic_auto_loc_list = 1
 let g:syntastic_check_on_open = 1
 let g:syntastic_check_on_wq = 0
 let g:syntastic_enable_highlighting = 1
-let g:syntastic_mode_map = { 'mode': 'active',
+let g:syntastic_mode_map = { 'mode': 'passive',
                            \ 'active_filetypes': [],
                            \ 'passive_filetypes': [] }
+let g:syntastic_auto_loc_list=1
+nnoremap<silent> <F5> :SyntasticCheck<CR>
 
 " Python
 let g:syntastic_python_checkers=['pyflakes']
