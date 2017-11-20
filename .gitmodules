@@ -7,3 +7,6 @@
 [submodule "plugins/vim-monokai"]
 	path = plugins/vim-monokai
 	url = https://github.com/sickill/vim-monokai
+[submodule "vim-better-whitespace"]
+	path = plugins/vim-better-whitespace
+	url = https://github.com/ntpeters/vim-better-whitespace
