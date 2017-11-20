@@ -99,7 +99,7 @@ endfunction
 
 " Opens the .h file that corresponds to a src file name
 function OpenHeader()
-  
+
   " Parse header name
   let line = split(getline("."))
   if len(line) > 0
@@ -171,5 +171,5 @@ function WritingMode()
   set cursorline!
   set number!
 
-  highlight NonText guifg=bg 
+  highlight NonText guifg=bg
 endfunction
