@@ -12,6 +12,14 @@ if has("gui_running")
   set guioptions -=L
 endif
 
+filetype plugin indent on
+" show existing tab with 4 spaces width
+set tabstop=4
+" when indenting with '>', use 4 spaces width
+set shiftwidth=4
+" On pressing tab, insert 4 spaces
+set expandtab
+
 " Command to turn on writing mode
 " au BufNewFile,BufRead *.{md,mdown,mkd,mkdn,markdown,txt} call WritingMode()
 
@@ -36,7 +44,7 @@ set lines=50 columns=84
 autocmd VimEnter * autocmd WinEnter * let w:created=1
 autocmd VimEnter * let w:created=1
 
-autocmd WinEnter * call AdjustWindow() 
+autocmd WinEnter * call AdjustWindow()
 
 command Openheader call OpenHeader()
 
