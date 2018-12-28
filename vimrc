@@ -26,7 +26,7 @@ set expandtab
 " colorscheme config
 syntax enable
 colorscheme monokai
-hi Normal ctermbg=233 guibg=#00162E
+hi Normal ctermbg=None guibg=#00162E
 
 set cursorline
 hi CursorLine ctermfg=NONE ctermbg=25 guibg=#00346D
