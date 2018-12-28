@@ -41,10 +41,11 @@ set tabstop=4
 set nohlsearch
 set lines=50 columns=84
 
-autocmd VimEnter * autocmd WinEnter * let w:created=1
-autocmd VimEnter * let w:created=1
-
-autocmd WinEnter * call AdjustWindow()
+if has("gui_running")
+  autocmd VimEnter * autocmd WinEnter * let w:created=1
+  autocmd VimEnter * let w:created=1
+  autocmd WinEnter * call AdjustWindow()
+endif
 
 command Openheader call OpenHeader()
 
