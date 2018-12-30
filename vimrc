@@ -4,6 +4,9 @@ set shell=/bin/bash
 set laststatus=2
 set colorcolumn=81
 
+" set clipboard to system clipboard
+set clipboard=unnamedplus
+
 if has("gui_running")
   set guifont=Monospace\ 13
   set guioptions -=m
@@ -35,7 +38,7 @@ hi clear NonText
 
 hi Visual ctermfg=NONE ctermbg=238 cterm=NONE guifg=NONE guibg=#434343 gui=NONE
 
-"winpos 1 0
+" winpos 1 0
 set number
 set tabstop=4
 set nohlsearch
