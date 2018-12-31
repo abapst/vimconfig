@@ -29,14 +29,15 @@ set expandtab
 " colorscheme config
 syntax enable
 colorscheme monokai
-hi Normal ctermbg=None guibg=#00162E
+" BG color was #00162E
+hi Normal ctermbg=None guibg=#000F1F
 
 set cursorline
-hi CursorLine ctermfg=NONE ctermbg=24 guibg=#005F87
-hi LineNr ctermfg=24 ctermbg=None cterm=NONE guifg=#005F87 guibg=#00162E gui=NONE
+hi CursorLine ctermfg=NONE ctermbg=238 guibg=#434343
+hi LineNr ctermfg=24 ctermbg=None cterm=NONE guifg=#005F87 guibg=#000F1F gui=NONE
 hi clear NonText
 
-hi Visual ctermfg=NONE ctermbg=238 cterm=NONE guifg=NONE guibg=#434343 gui=NONE
+hi Visual ctermfg=NONE ctermbg=24 cterm=NONE guifg=NONE guibg=#005F87 gui=NONE
 
 " winpos 1 0
 set number
