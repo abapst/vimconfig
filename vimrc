@@ -33,7 +33,7 @@ colorscheme monokai
 hi Normal ctermbg=None guibg=#000F1F
 
 set cursorline
-hi CursorLine ctermfg=NONE ctermbg=238 guibg=#434343
+hi CursorLine ctermfg=NONE ctermbg=236 guibg=#303030
 hi LineNr ctermfg=24 ctermbg=None cterm=NONE guifg=#005F87 guibg=#000F1F gui=NONE
 hi clear NonText
 
