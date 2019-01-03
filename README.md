@@ -7,7 +7,7 @@ Plugins:
   - [Monokai](https://github.com/sickill/vim-monokai)
   - [vim-better-whitespace](https://github.com/ntpeters/vim-better-whitespace)
 
-![myconfig](https://user-images.githubusercontent.com/12631256/50627303-c103d980-0ee7-11e9-9bba-5a29d1049f3f.png)
+![vimrc](https://user-images.githubusercontent.com/12631256/50627432-46878980-0ee8-11e9-984a-7e1dd8972c2f.png)
 
 ## Installation
 
