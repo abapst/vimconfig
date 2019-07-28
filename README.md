@@ -6,6 +6,7 @@ Plugins:
   - [Syntastic](https://github.com/vim-syntastic/syntastic)
   - [Monokai](https://github.com/sickill/vim-monokai)
   - [vim-better-whitespace](https://github.com/ntpeters/vim-better-whitespace)
+  - [vim-flake8](https://github.com/nvie/vim-flake8)
 
 ![vimrc](https://user-images.githubusercontent.com/12631256/50627432-46878980-0ee8-11e9-984a-7e1dd8972c2f.png)
 
